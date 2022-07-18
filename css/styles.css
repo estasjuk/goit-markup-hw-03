@@ -1,0 +1,258 @@
+/* основной цвет фона - #FFFFFF
+вторичный цвет фона - #F5F4FA
+цвет заголовков - #212121
+цвет текста - #757575
+цвет акцента, ховера фокуса - #2196F3
+ховер кнопки "заказать услугу" - #188ce8
+
+цвета лого - #2196F3  #000000 #FFFFFF
+цвет тел и емейл в футере - rgba(255, 255, 255, 0.6) 
+бекграунд цвет футера и заглушки героя - #2F303A */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+:root {
+  --main-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --title-color: #212121;
+  --text-color: #757575;
+  --active-hover-focus-current: #2196f3;
+  --main-logo: #2196f3;
+  --hover-btn: #188ce8;
+  --logo-header: #000000;
+  --logo-footer: #ffffff;
+  --contacts-footer: rgba(255, 255, 255, 0.6);
+  --background-footer-hero: #2f303a;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--main-background-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+  color: var(--main-logo);
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-header {
+  color: var(--logo-header);
+}
+
+.logo-footer {
+  color: var(--logo-footer);
+}
+
+.list-item {
+  list-style: none;
+}
+
+.nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-tel,
+.nav-mail {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link {
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-tel:hover,
+.nav-tel:focus,
+.nav-mail:hover,
+.nav-mail:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus,
+.footer-address:hover,
+.footer-address:focus {
+  color: var(--active-hover-focus-current);
+}
+
+[aria-current] {
+  color: var(--active-hover-focus-current);
+}
+
+.hero-dummy {
+  background-color: var(--background-footer-hero);
+}
+
+.hero-title {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.btn {
+  font-family: inherit;
+  color: #ffffff;
+  background-color: var(--active-hover-focus-current);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--hover-btn);
+}
+
+.features {
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.features-text {
+  color: var(--text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.work {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.members {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.member {
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.member-position {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.footer-contacts {
+  font-style: normal;
+}
+
+.footer-tel,
+.footer-mail {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contacts-footer);
+  text-decoration: none;
+}
+
+.footer-address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+.project-title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-btn {
+  font-family: inherit;
+  color: var(--title-color);
+  background-color: var(--secondary-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.current-button {
+  background-color: var(--active-hover-focus-current);
+  color: #ffffff;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.logo-footer {
+  color: var(--main-background-color);
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: var(--background-footer-hero);
+}
