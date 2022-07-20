@@ -11,23 +11,34 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header>
-      <a href="./index.html" class="logo" lang="en"> Web<span class="logo-header">Studio</span></a>
-      <nav>
-        <ul class="nav list-item">
-          <li><a href="./index.html" aria-current="page" class="nav-link">Студия</a></li>
-          <li><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
-          <li><a href="" class="nav-link">Контакты</a></li>
+      <div class="container head-container">
+        <a href="./index.html" class="logo" lang="en">
+          Web<span class="logo-header">Studio</span></a
+        >
+        <nav>
+          <ul class="nav list-item">
+            <li class="nav-item">
+              <a href="./index.html" aria-current="page" class="nav-link">Студия</a>
+            </li>
+            <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-contacts list-item">
+          <li class="nav-contacts-item">
+            <a href="mailto:info@devstudio.com" class="nav-mail">info@devstudio.com</a>
+          </li>
+          <li class="nav-contacts-item">
+            <a href="tel:+380961111111" class="nav-tel">+380961111111</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="nav-contacts list-item">
-        <li><a href="mailto:info@devstudio.com" class="nav-mail">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="nav-tel">+380961111111</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero-dummy">

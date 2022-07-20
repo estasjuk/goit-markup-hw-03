@@ -36,12 +36,36 @@
   --background-footer-hero: #2f303a;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
 body {
   color: var(--text-color);
   background-color: var(--main-background-color);
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+}
 .logo {
   color: var(--main-logo);
   font-family: 'Raleway', sans-serif;
@@ -65,10 +89,15 @@ body {
 }
 
 .nav {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.nav-contacts {
+  display: flex;
 }
 
 .nav-tel,
@@ -81,9 +110,23 @@ body {
   letter-spacing: 0.02em;
 }
 
+.nav-item {
+  background-color: teal;
+}
+
+.nav-item + .nav-item {
+  margin-left: 50px;
+}
+
 .nav-link {
+  display: block;
+  padding: 10px;
   color: var(--title-color);
   text-decoration: none;
+}
+
+.nav-contacts-item + .nav-contacts-item {
+  margin-left: 50px;
 }
 
 .nav-link:hover,
