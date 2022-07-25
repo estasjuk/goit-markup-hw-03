@@ -54,6 +54,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -88,6 +90,8 @@ body {
 
 .logo {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 93px;
   color: var(--main-logo);
   font-family: 'Raleway', sans-serif;
@@ -125,6 +129,8 @@ body {
 
 .nav-tel,
 .nav-mail {
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
